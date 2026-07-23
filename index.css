@@ -1,0 +1,324 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    color:#333;
+    line-height:1.5;
+}
+
+
+.hero{
+    position:relative;
+    width:100%;
+    height:550px;
+    overflow:hidden;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.hero .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.hero-text{
+    position:absolute;
+    top:50%;
+    left:50px;
+    transform:translateY(-50%);
+    color:#fff;
+    z-index:2;
+}
+
+.hero-text h1{
+    font-size:70px;
+    letter-spacing:6px;
+    font-weight:bold;
+}
+
+.hero-text h2{
+    font-size:26px;
+    letter-spacing:8px;
+    margin-top:10px;
+}
+
+.hero-text p{
+    margin-top:20px;
+    width:450px;
+    font-size:15px;
+}
+
+/* ROOMS */
+
+.rooms{
+    background:#fff;
+    padding:70px 8%;
+}
+
+.rooms h2{
+    text-align:center;
+    margin-bottom:45px;
+    font-size:32px;
+}
+
+.room-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:40px;
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.room{
+    flex:1;
+}
+
+.room img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.room h3{
+    margin-top:15px;
+    font-size:28px;
+    color:#555;
+}
+
+.room p{
+    margin:15px 0;
+    color:#666;
+    font-size:16px;
+}
+
+.room a{
+    display:inline-block;
+    text-decoration:none;
+    background:rgb(196, 128, 2);
+    color:#fff;
+    padding:8px 18px;
+    border-radius:4px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* WHY CHOOSE */
+
+.why{
+    position:relative;
+    height:500px;
+    overflow:hidden;
+}
+
+.why img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.why .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.why-text{
+    position:absolute;
+    top:50%;
+    left:60px;
+    transform:translateY(-50%);
+    color:#fff;
+    z-index:2;
+}
+
+.why-text h2{
+    font-size:42px;
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+.why-text ul{
+    list-style:disc;
+    margin-left:25px;
+}
+
+.why-text li{
+    margin:12px 0;
+    font-size:22px;
+}
+
+/* FOOTER */
+
+footer{
+    position:relative;
+    height:500px;
+    overflow:hidden;
+}
+
+footer img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+footer .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+}
+
+.footer-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:85%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    color:#fff;
+    z-index:2;
+}
+
+.contact{
+    width:45%;
+}
+
+.contact h2{
+    margin-bottom:20px;
+    font-size:34px;
+}
+
+.contact ul{
+    list-style:none;
+}
+
+.contact li{
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+.stay{
+    width:45%;
+    text-align:right;
+}
+
+.stay h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.stay p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero{
+    height:380px;
+}
+
+.hero-text{
+    left:25px;
+}
+
+.hero-text h1{
+    font-size:45px;
+}
+
+.hero-text h2{
+    font-size:18px;
+    letter-spacing:4px;
+}
+
+.hero-text p{
+    width:90%;
+    font-size:13px;
+}
+
+.rooms{
+    padding:50px 20px;
+}
+
+.room-container{
+    grid-template-columns: 1fr;
+}
+
+.room img{
+    height:230px;
+}
+
+.why{
+    height:350px;
+}
+
+.why-text{
+    left:25px;
+}
+
+.why-text h2{
+    font-size:28px;
+}
+
+.why-text li{
+    font-size:16px;
+}
+
+footer{
+    height:auto;
+}
+
+.footer-content{
+    position:absolute;
+    width:90%;
+    flex-direction:column;
+    gap:40px;
+    text-align:left;
+}
+
+.contact,
+.stay{
+    width:100%;
+}
+
+.stay{
+    text-align:left;
+}
+
+.stay h2{
+    font-size:28px;
+}
+
+.contact h2{
+    font-size:28px;
+}
+
+.contact li,
+.stay p{
+    font-size:16px;
+}
+}
